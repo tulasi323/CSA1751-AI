@@ -1,0 +1,18 @@
+# Simple Decision Tree Example
+# Our "dataset" is small and binary
+data = [
+    {'feature': 0, 'label': 0},
+    {'feature': 0, 'label': 0},
+    {'feature': 1, 'label': 1},
+    {'feature': 1, 'label': 1},
+]
+
+def decision_tree(sample):
+    if sample['feature'] == 0:
+        return 0
+    else:
+        return 1
+
+# Test the tree
+for s in data:
+    print(f"Input: {s['feature']}, Prediction: {decision_tree(s)}")
