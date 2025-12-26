@@ -64,5 +64,15 @@ Function GBFS(graph, h, start, goal):
                 Add (h[neighbor], neighbor) to q
 
 
+**Algorithm: Minimax**
+
+Function Minimax(depth, node, isMax, values):
+
+1. If depth == 0:
+      Return values[node]
+
+2. If isMax == True:
+      Return maximum of:
+          Minimax(depth −
 
  
