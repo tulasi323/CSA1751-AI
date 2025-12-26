@@ -34,6 +34,16 @@ DFS(graph, start, visited):
      d. For each (neighbor, weight) in graph[node]:
            Add (cost + weight, neighbor) to queue
 
+**Algorithm: A* Search (Best Algorithm)**
+ q ← [(h[start], 0, start)]
+   
+  While q is not empty:
+     a. Sort q by f = g + h
+     b. Remove node with lowest f
+     c. If node == goal:
+           Print path cost and stop
+     d. For each neighbor:
+           Add (new f, new g, neighbor) to q
 
 
  
