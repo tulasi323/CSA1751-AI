@@ -33,8 +33,8 @@ DFS(graph, start, visited):
            Print cost and stop
      d. For each (neighbor, weight) in graph[node]:
            Add (cost + weight, neighbor) to queue
-
-**Algorithm: A* Search (Best Algorithm)**
+           
+****Algorithm: A* Search (Best Algorithm)****
  q ← [(h[start], 0, start)]
    
   While q is not empty:
@@ -44,6 +44,25 @@ DFS(graph, start, visited):
            Print path cost and stop
      d. For each neighbor:
            Add (new f, new g, neighbor) to q
+
+**Algorithm: Greedy Best-First Search (GBFS)**
+
+Function GBFS(graph, h, start, goal):
+
+1. q ← [(h[start], start)]
+2. visited ← empty set
+
+3. While q is not empty:
+     a. Sort q by heuristic value
+     b. Remove (h, node) with lowest value
+     c. Print node
+     d. If node == goal:
+           Stop
+     e. Add node to visited
+     f. For each neighbor of node:
+           If neighbor not in visited:
+                Add (h[neighbor], neighbor) to q
+
 
 
  
