@@ -75,4 +75,16 @@ Function Minimax(depth, node, isMax, values):
       Return maximum of:
           Minimax(depth −
 
- 
+ Algorithm: Minimax
+
+Function Minimax(node, depth, maximizing):
+
+1. If depth == 0 or node has no children:
+     Return score[node]
+
+2. If maximizing:
+     Return max(Minimax(child, depth-1, False) for child in children[node])
+
+3. Else:
+     Return min(Minimax(child, depth-1, True) for child in children[node])
+
